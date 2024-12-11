@@ -169,6 +169,7 @@ nav ul li{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size:large;
 }
 .comp{
     
