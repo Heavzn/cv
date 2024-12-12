@@ -1,13 +1,14 @@
-
 .back-projet{
     background-color: white;
-    margin-top: 2%;
-    height: 60vh;
+    margin-top: 10rem;
+    padding-top: 5%;
+    padding-bottom: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 
 .projets {
     margin-top: 2%;
@@ -75,4 +76,55 @@
     margin-top: 5%;
     margin-bottom: auto;
     
+}
+
+@media (max-width: 1200px) {
+    .projets {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .carte {
+        width: 200px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-projet {
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+
+    .carte {
+        width: 150px;
+        height: 300px;
+    }
+
+    .face-avant img {
+        height: 70%;
+        width: 70%;
+    }
+
+    .face-arriere p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carte {
+        width: 100px;
+        height: 200px;
+    }
+
+    .face-avant img {
+        height: 60%;
+        width: 60%;
+    }
+
+    .face-arriere p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

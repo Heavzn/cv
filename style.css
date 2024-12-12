@@ -11,19 +11,21 @@ body {
 
 nav a{
     color: white;
+    box-sizing: border-box; /* Ensure the size does not change */
 }
 
 nav a:hover{
     color: black;
     background-color: white;
     text-decoration: none;
-    border: 5px solid white;
+    border: 1px solid white;
     border-radius:10px ;
+    box-sizing: border-box; /* Ensure the size does not change */
 }
 
 header { 
     position: fixed; /* Position fixe */ 
-    top: 10; /* Aligné en haut de la page */ 
+    top: 0; /* Aligné en haut de la page */ 
     width: 100%;
     z-index: 999999;
     background-color: rgb(0, 0, 0);
@@ -35,33 +37,25 @@ header {
 }
 
 
-.nav2 nav ul{
-    margin-left: 50%;
-    width: 50%;
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: -40px;
-    font-weight: bold;
-    
-}
+
 
 nav ul li{
     color: white;
-    
+    margin-right: 1rem; /* Add spacing between li elements */
 }
 .contains {
-    margin-top: 6.5vh;
+    margin-top: 6vh;
     display: flex;
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
      /* Permet à la div de prendre tout l'espace disponible */
     background-image: url("res/Aravis.jpg");
     background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0;
     width: 100%;
-    height: 93.5vh;
+    height: 94vh;
   
 }
 
@@ -136,7 +130,7 @@ nav ul li{
 #A_Propos{
     background-color: #e8e8e8;
     border-radius:15px ;
-    margin-top: 106vh;
+    margin-top: 105vh;
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 10vh;
@@ -169,8 +163,22 @@ nav ul li{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-size:large;
+    font-size: large;
+    margin-left: 5rem;
 }
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 .comp{
     
     display: flex;
@@ -237,13 +245,15 @@ nav ul li{
     
     background-color: white;
     margin-top: 5%;
-    height: 60vh;
+    padding-bottom: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
 }
+
+
 .slider{
     
     display: flex;
@@ -253,4 +263,228 @@ nav ul li{
     top: 0;
     width: 100%;
     
+}
+.hobie{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: flex-start;
+}
+.hobie img{
+    
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: black solid 2px;
+    border-radius: 15px;
+}
+.hobie p{
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 8rem;
+    margin-right: 10rem;
+}
+.hobies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 7%;
+}
+.nav2 h3{
+    margin-left: 3rem;
+    font-weight: bold ;
+}
+.nav2 nav ul{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 25px;
+    font-weight: bold;
+    
+}
+.nav2 nav ul li{
+    display: contents;
+    text-align: center;
+    
+    
+}
+.nav2 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 34%;
+   
+   
+    
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #000000; /* Couleur de fond du footer */
+    padding: 1rem 0; /* Espacement interne du footer */
+    text-align: center; /* Centrer le texte */
+    height: 100vh; /* Hauteur du footer */
+}
+
+footer .foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem; /* Espacement entre les éléments */
+}
+
+footer .contact  {
+    display: flex;
+    flex-direction: column; /* Afficher les éléments en colonne */
+    align-items: center;
+    gap: 0.5rem; /* Espacement entre les liens */
+}
+footer .reseaux {
+    display: flex;
+    flex-direction: row; /* Afficher les éléments en colonne */
+    align-items: center;
+    gap: 0.5rem; /* Espacement entre les liens */
+}
+
+footer a {
+    text-decoration: none; /* Supprimer la décoration des liens */
+    color: white;
+}
+
+.reseaux a:hover {
+    border: rgb(0, 30, 255) 2px solid;
+   
+}
+.contact :hover, .tel :hover{
+    color: rgb(0, 30, 255);
+    text-decoration: none;
+    
+}
+
+
+footer .reseaux img {
+    width: 48px; /* Taille des icônes */
+    height: 48px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .Top-page h1 {
+        font-size: 6rem;
+    }
+    .Top-page h3 {
+        font-size: 4rem;
+    }
+    .categorie h2 {
+        font-size: x-large;
+    }
+    .info img, .hobie img {
+        width: 50%;
+        height: 50%;
+    }
+    .hobie p {
+        margin-left: 4rem;
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+    .Top-page h1 {
+        font-size: 4rem;
+    }
+    .Top-page h3 {
+        font-size: 3rem;
+    }
+    .categorie h2 {
+        font-size: large;
+    }
+    .info img, .hobie img {
+        width: 70%;
+        height: 70%;
+    }
+    .hobie p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .comp img {
+        width: 40%;
+        height: 40%;
+    }
+    .langages, .softskills, .langue {
+        min-width: 200px;
+        min-height: 150px;
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .contains {
+        background-size: contain;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+    }
+    .Top-page h1 {
+        font-size: 3rem;
+    }
+    .Top-page h3 {
+        font-size: 2rem;
+    }
+    .categorie h2 {
+        font-size: medium;
+    }
+    .info img, .hobie img {
+        width: 90%;
+        height: 90%;
+    }
+    .hobie p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .comp img {
+        width: 60%;
+        height: 60%;
+    }
+    .langages, .softskills, .langue {
+        min-width: 150px;
+        min-height: 100px;
+        max-width: 200px;
+        max-height: 150px;
+    }
+    .nav2 nav ul {
+        flex-direction: column;
+    }
+    .nav2 nav ul li {
+        margin-bottom: 1rem;
+    }
+    footer .foot {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contains {
+        background-size: contain;
+    }
 }
