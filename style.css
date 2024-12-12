@@ -254,6 +254,7 @@ footer{
 }
 
 
+
 .slider{
     
     display: flex;
@@ -315,6 +316,7 @@ footer{
     
 }
 .nav2 nav ul li{
+    font-size: medium;
     display: contents;
     text-align: center;
     
@@ -387,6 +389,22 @@ footer .reseaux img {
 
 
 
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+#openBtn, #closeBtn {
+    display: none;
+}
+
+
+
+
 @media (max-width: 1200px) {
     .Top-page h1 {
         font-size: 6rem;
@@ -405,6 +423,8 @@ footer .reseaux img {
         margin-left: 4rem;
         margin-right: 5rem;
     }
+    
+
 }
 
 @media (max-width: 768px) {
@@ -487,4 +507,8 @@ footer .reseaux img {
     .contains {
         background-size: contain;
     }
+}
+
+.nav2 nav .toggle-button {
+    display: none; /* Hide the toggle button by default */
 }
